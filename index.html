@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<label for="gender">Enter your gender (male/female): </label>
+    <input type="text" id="gender" name="gender">
+    <br><br>
+
+	<div class="dropdown">
+		<button onclick="toggleDropdown()" class="dropdown-button">Select Operation</button>
+		<div id="dropdown-content" class="dropdown-content">
+			<button onclick="performOperation('Core')">Core Branch</button>
+			<button onclick="performOperation('Soft')">Soft Branch</button>
+			<button onclick="performOperation('Emerging')">Emerging Branch</button>
+			<button onclick="performOperation('Bio')">Bio Branch</button>
+			<button onclick="performOperation('All')">All Branch</button>
+		</div>
+	</div>
+	
+	<button onclick="handleUserInput()" class="Submit">Submit</button>
+
+	
+
+	<script src="json _to_js.js"></script>
+</body>
+</html>
